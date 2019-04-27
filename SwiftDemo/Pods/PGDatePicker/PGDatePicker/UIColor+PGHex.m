@@ -1,6 +1,5 @@
 //
 //  UIColor+PGHex.m
-//  HooDatePickerDemo
 //
 //  Created by piggybear on 2017/7/25.
 //  Copyright © 2017年 piggybear. All rights reserved.
@@ -18,7 +17,7 @@
     return hexComponent / 255.0;
 }
 
-+ (UIColor *)colorWithHexString:(NSString *)hexString {
++ (UIColor *)pg_colorWithHexString:(NSString *)hexString {
     CGFloat alpha, red, blue, green;
     
     NSString *colorString = [[hexString stringByReplacingOccurrencesOfString:@"#" withString:@""] uppercaseString];

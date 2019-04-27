@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="nPQ-Hg-Z75">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="nPQ-Hg-Z75">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -28,7 +28,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="yearHandler:" destination="nPQ-Hg-Z75" eventType="touchUpInside" id="P83-lq-Qxd"/>
+                                    <action selector="yearHandler:" destination="nPQ-Hg-Z75" eventType="touchUpInside" id="2MQ-0g-L9s"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3GL-bx-Y0T">
@@ -39,7 +39,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="yearAndMonthHandler:" destination="nPQ-Hg-Z75" eventType="touchUpInside" id="KJF-L0-NEt"/>
+                                    <action selector="yearAndMonthHandler:" destination="nPQ-Hg-Z75" eventType="touchUpInside" id="Fn7-Cq-Tct"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Fu-vm-IVE">
@@ -50,7 +50,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="dateHandler:" destination="nPQ-Hg-Z75" eventType="touchUpInside" id="smJ-Ca-WNP"/>
+                                    <action selector="dateHandler:" destination="nPQ-Hg-Z75" eventType="touchUpInside" id="HFS-mk-l5F"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zg8-9s-5ib">
@@ -61,7 +61,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="dateHourMinuteHandler:" destination="nPQ-Hg-Z75" eventType="touchUpInside" id="n69-HB-V7F"/>
+                                    <action selector="dateHourMinuteHandler:" destination="nPQ-Hg-Z75" eventType="touchUpInside" id="vBH-7X-Yxi"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jgu-rh-6wq">
@@ -72,7 +72,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="dateHourMinuteSecondHandler:" destination="nPQ-Hg-Z75" eventType="touchUpInside" id="Sw7-xW-66j"/>
+                                    <action selector="dateHourMinuteSecondHandler:" destination="nPQ-Hg-Z75" eventType="touchUpInside" id="LJg-uV-DQ0"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xyu-kE-GMm">
@@ -83,7 +83,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="timeHandler:" destination="nPQ-Hg-Z75" eventType="touchUpInside" id="CdM-LH-VMF"/>
+                                    <action selector="timeHandler:" destination="nPQ-Hg-Z75" eventType="touchUpInside" id="ggp-0V-Mjs"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wM2-ja-cRC">
@@ -94,7 +94,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="timeAndSecondHandler:" destination="nPQ-Hg-Z75" eventType="touchUpInside" id="oZ2-dc-rDn"/>
+                                    <action selector="timeAndSecondHandler:" destination="nPQ-Hg-Z75" eventType="touchUpInside" id="HiS-5H-CFz"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="671-qf-h6m">
@@ -105,7 +105,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="dateAndTimeHandler:" destination="nPQ-Hg-Z75" eventType="touchUpInside" id="WJF-r3-oCP"/>
+                                    <action selector="dateAndTimeHandler:" destination="nPQ-Hg-Z75" eventType="touchUpInside" id="W5I-Q0-azF"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9G6-2Y-qvt">
@@ -116,7 +116,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="styleHandler:" destination="nPQ-Hg-Z75" eventType="touchUpInside" id="lHa-P0-KpI"/>
+                                    <action selector="styleHandler:" destination="nPQ-Hg-Z75" eventType="touchUpInside" id="khv-yM-FeU"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z4t-xM-n5g">
@@ -127,7 +127,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="titleHandler:" destination="nPQ-Hg-Z75" eventType="touchUpInside" id="Mnl-XD-dc1"/>
+                                    <action selector="titleHandler:" destination="nPQ-Hg-Z75" eventType="touchUpInside" id="tjE-I1-Ybu"/>
                                 </connections>
                             </button>
                         </subviews>

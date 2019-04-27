@@ -27,7 +27,7 @@ PGPickerView是将UIPickerView的弯曲弧度变成直列表，可以是单列�
 # CocoaPods安装
 
 ```
-pod 'PGPickerView', '>= 1.2.0'
+pod 'PGPickerView', '>= 1.2.1'
 ```
 
 # 使用
@@ -63,9 +63,6 @@ pickerView.textColorOfOtherRow = [UIColor blackColor];
 ```
 
 **更多的使用方法请下载[demo](https://github.com/xiaozhuxiong121/PGPickerView)查看**
-
-# 想要所的话
-喜欢的话扔一个免费的[star](https://github.com/xiaozhuxiong121/PGPickerView)，谢谢啦🌺
 
 # 许可证
 

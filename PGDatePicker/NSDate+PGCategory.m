@@ -1,6 +1,5 @@
 //
 //  NSDate+PGCategory.m
-//  HooDatePickerDemo
 //
 //  Created by piggybear on 2017/8/1.
 //  Copyright © 2017年 piggybear. All rights reserved.
@@ -9,9 +8,15 @@
 #import "NSDate+PGCategory.h"
 
 @implementation NSDate (PGCategory)
+<<<<<<< HEAD
 
 static const NSCalendarUnit unitFlags = NSCalendarUnitYear | NSCalendarUnitMonth | NSCalendarUnitDay | NSCalendarUnitHour | NSCalendarUnitMinute | NSCalendarUnitSecond | NSCalendarUnitWeekday | NSCalendarUnitWeekdayOrdinal | NSCalendarUnitWeekOfMonth;
 
+=======
+    
+static const NSCalendarUnit unitFlags = NSCalendarUnitYear | NSCalendarUnitMonth | NSCalendarUnitDay | NSCalendarUnitHour | NSCalendarUnitMinute | NSCalendarUnitSecond | NSCalendarUnitWeekday;
+    
+>>>>>>> master
 + (NSDate *)setYear:(NSInteger)year {
     NSCalendar *calendar = [NSCalendar currentCalendar];
     NSDate *currentDate = [NSDate date];
@@ -24,7 +29,7 @@ static const NSCalendarUnit unitFlags = NSCalendarUnitYear | NSCalendarUnitMonth
     NSDate *date = [calendar dateFromComponents:components];
     return date;
 }
-
+    
 + (NSDate *)setYear:(NSInteger)year month:(NSInteger)month {
     NSCalendar *calendar = [NSCalendar currentCalendar];
     NSDate *currentDate = [NSDate date];
@@ -37,7 +42,7 @@ static const NSCalendarUnit unitFlags = NSCalendarUnitYear | NSCalendarUnitMonth
     NSDate *date = [calendar dateFromComponents:components];
     return date;
 }
-
+    
 + (NSDate *)setYear:(NSInteger)year month:(NSInteger)month day:(NSInteger)day {
     NSCalendar *calendar = [NSCalendar currentCalendar];
     NSDate *currentDate = [NSDate date];
@@ -51,7 +56,7 @@ static const NSCalendarUnit unitFlags = NSCalendarUnitYear | NSCalendarUnitMonth
     NSDate *date = [calendar dateFromComponents:components];
     return date;
 }
-
+    
 + (NSDate *)setYear:(NSInteger)year month:(NSInteger)month day:(NSInteger)day hour:(NSInteger)hour minute:(NSInteger)minute {
     NSCalendar *calendar = [NSCalendar currentCalendar];
     NSDate *currentDate = [NSDate date];
@@ -64,7 +69,7 @@ static const NSCalendarUnit unitFlags = NSCalendarUnitYear | NSCalendarUnitMonth
     NSDate *date = [calendar dateFromComponents:components];
     return date;
 }
-
+    
 + (NSDate *)setYear:(NSInteger)year month:(NSInteger)month day:(NSInteger)day hour:(NSInteger)hour minute:(NSInteger)minute second:(NSInteger)second {
     NSCalendar *calendar = [NSCalendar currentCalendar];
     NSDate *currentDate = [NSDate date];
@@ -78,7 +83,7 @@ static const NSCalendarUnit unitFlags = NSCalendarUnitYear | NSCalendarUnitMonth
     NSDate *date = [calendar dateFromComponents:components];
     return date;
 }
-
+    
 + (NSDate *)setMonth:(NSInteger)month day:(NSInteger)day hour:(NSInteger)hour minute:(NSInteger)minute {
     NSCalendar *calendar = [NSCalendar currentCalendar];
     NSDate *currentDate = [NSDate date];
@@ -90,7 +95,7 @@ static const NSCalendarUnit unitFlags = NSCalendarUnitYear | NSCalendarUnitMonth
     NSDate *date = [calendar dateFromComponents:components];
     return date;
 }
-
+    
 + (NSDate *)setHour:(NSInteger)hour minute:(NSInteger)minute {
     NSCalendar *calendar = [NSCalendar currentCalendar];
     NSDate *currentDate = [NSDate date];
@@ -100,7 +105,17 @@ static const NSCalendarUnit unitFlags = NSCalendarUnitYear | NSCalendarUnitMonth
     NSDate *date = [calendar dateFromComponents:components];
     return date;
 }
-
+    
++ (NSDate *)setMinute:(NSInteger)minute second:(NSInteger)second {
+    NSCalendar *calendar = [NSCalendar currentCalendar];
+    NSDate *currentDate = [NSDate date];
+    NSDateComponents *components = [calendar components:unitFlags fromDate:currentDate];
+    [components setMinute:minute];
+    [components setSecond:second];
+    NSDate *date = [calendar dateFromComponents:components];
+    return date;
+}
+    
 + (NSDate *)setHour:(NSInteger)hour minute:(NSInteger)minute second:(NSInteger)second {
     NSCalendar *calendar = [NSCalendar currentCalendar];
     NSDate *currentDate = [NSDate date];
@@ -111,13 +126,24 @@ static const NSCalendarUnit unitFlags = NSCalendarUnitYear | NSCalendarUnitMonth
     NSDate *date = [calendar dateFromComponents:components];
     return date;
 }
-
+    
 - (NSInteger)howManyDaysWithMonth {
     NSCalendar *calendar = [NSCalendar currentCalendar];
     NSRange range = [calendar rangeOfUnit:NSCalendarUnitDay inUnit:NSCalendarUnitMonth forDate:self];
     NSInteger day = range.length;
     return day;
 }
+<<<<<<< HEAD
 
 @end
 
+=======
+    
++ (NSDate *)dateFromComponents:(NSDateComponents*)dateComponents {
+    NSCalendar * calendar = [NSCalendar currentCalendar];
+    NSDate * date = [calendar dateFromComponents:dateComponents];
+    return date;
+}
+    
+    @end
+>>>>>>> master

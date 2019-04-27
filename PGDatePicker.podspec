@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "PGDatePicker"
-  s.version      = "1.5.4"
+  s.version      = "2.6.9"
   s.summary      = "日期选择器"
   s.homepage     = "https://github.com/xiaozhuxiong121/PGDatePicker"
   s.license      = "MIT"
@@ -11,7 +11,6 @@ Pod::Spec.new do |s|
   s.resource     = 'PGDatePicker/PGDatePicker.bundle'
   s.frameworks   = "UIKit"
   s.requires_arc = true
-
   s.dependency 'PGPickerView'
 end
  

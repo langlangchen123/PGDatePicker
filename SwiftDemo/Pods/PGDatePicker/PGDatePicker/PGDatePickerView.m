@@ -1,6 +1,5 @@
 //
 //  PGDatePickerView.m
-//  HooDatePickerDemo
 //
 //  Created by piggybear on 2017/7/25.
 //  Copyright © 2017年 piggybear. All rights reserved.
@@ -8,7 +7,6 @@
 
 #import "PGDatePickerView.h"
 #import "UIColor+PGHex.h"
-#import "PGDatePickerMacros.h"
 
 @interface PGDatePickerView()
 @property (nonatomic, weak) UILabel *label;
@@ -22,21 +20,27 @@
     return self;
 }
 
+- (void)layoutSubviews {
+    [super layoutSubviews];
+    
+    CGSize size = [self.content sizeWithAttributes:@{NSFontAttributeName: [UIFont systemFontOfSize:17]}];
+    self.label.frame = (CGRect){{self.contentView.bounds.size.width / 2 - size.width / 2,
+        self.contentView.bounds.size.height / 2 - size.height / 2}, size};
+}
+
 #pragma Setter
 - (void)setCurrentDate:(BOOL)currentDate {
     _currentDate = currentDate;
     if (currentDate) {
-        self.label.textColor = [UIColor colorWithHexString:@"#FAD9A2"];
+        self.label.textColor = [UIColor pg_colorWithHexString:@"#FAD9A2"];
     }else {
-        self.label.textColor = [UIColor colorWithHexString:@"#838383"];
+        self.label.textColor = [UIColor pg_colorWithHexString:@"#838383"];
     }
 }
 
 - (void)setContent:(NSString *)content {
     _content = content;
     self.label.text = content;
-    CGSize size = [content sizeWithAttributes:@{NSFontAttributeName: [UIFont systemFontOfSize:17]}];
-    self.label.frame = (CGRect){{kScreenWidth / 2 - size.width / 2, kTableViewCellHeight / 2 - size.height / 2}, size};
 }
 
 #pragma Getter

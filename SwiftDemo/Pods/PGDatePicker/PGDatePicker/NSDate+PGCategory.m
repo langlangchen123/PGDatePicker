@@ -1,6 +1,5 @@
 //
 //  NSDate+PGCategory.m
-//  HooDatePickerDemo
 //
 //  Created by piggybear on 2017/8/1.
 //  Copyright © 2017年 piggybear. All rights reserved.
@@ -97,6 +96,16 @@ static const NSCalendarUnit unitFlags = NSCalendarUnitYear | NSCalendarUnitMonth
     NSDateComponents *components = [calendar components:unitFlags fromDate:currentDate];
     [components setHour:hour];
     [components setMinute:minute];
+    NSDate *date = [calendar dateFromComponents:components];
+    return date;
+}
+
++ (NSDate *)setMinute:(NSInteger)minute second:(NSInteger)second {
+    NSCalendar *calendar = [NSCalendar currentCalendar];
+    NSDate *currentDate = [NSDate date];
+    NSDateComponents *components = [calendar components:unitFlags fromDate:currentDate];
+    [components setMinute:minute];
+    [components setSecond:second];
     NSDate *date = [calendar dateFromComponents:components];
     return date;
 }
